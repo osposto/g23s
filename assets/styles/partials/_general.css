@@ -1,0 +1,94 @@
+/*PALETA DE COLORES*/
+
+/*Estilos del <header>*/
+.head-menu {
+    background: #ffb797;
+    color: #fff;
+    height: 130px;
+    }
+    
+    .head-menu a {
+    color: white;
+    }
+    
+    .logo {
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: #fff;
+    align-items: center;
+    }
+    
+    .txt-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+    nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    width: 80%;
+    } 
+    nav li{
+    display:inline-block;
+    width:15%;
+    padding:30px 60px;
+    background-color:#ffb797;
+   
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#8B0000;
+    color:#fff;
+    }
+
+footer{
+    background-color: #ffb797;
+    font-family: Barlow-BlackItalic;
+    text-align: center;
+    
+}
+
+.icono-footer {
+    width: 30px; height: 30px;
+}
+
+
+form{
+    background-color: #f0f0f0;
+    font-family: Damion-Regular;
+    
+}
+
+
+/*Fuentes*/
+@font-face {
+    font-family: Barlow-BlackItalic;
+    src: url(../../../assets/fonts/Barlow-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+
+
+
+/*Esto debe quedar al final del .CSS*/
+ /*Defino los estilos para que se adapte en cada viewport*/
+
+/*Defino los estilos para escritorio*/
+
+ /*  @media screen and (min-width: 480px){
+    header{
+        background-color:;
+    }
+}
+
+@media screen and (min-width: 480px) and (orientation:landscape) {
+    header{
+        background-color:;
+    }
+}
