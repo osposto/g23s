@@ -1,7 +1,21 @@
-
 @font-face {
-  font-family: "Barlow";
-  src: url(fuentes_html/Barlow/Barlow-Medium.ttf) format("ttf");
+   src: url(fuentes_html/Barlow/Barlow-Medium.ttf) format("ttf");
+   font-family: "Barlow-Medium";
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 1000px;
+  /* text-align: center;*/
 }
 
 .isotipo {
@@ -13,13 +27,12 @@ input,
 select {
   /*display: flex;*/
   border-radius: 5px;
-  background-color: rgb(250, 252, 246);
+  background-color: rgb(231, 248, 197);
   margin: 10px;
-  padding: 5px;
-  font-family: "Barlow", sans-serif;
-  font-size: 15px;
+  padding: 0.2rem;
+  font-family: "Barlow-Medium", sans-serif;
+  font-size: 1rem;
   text-align: left;
-
 }
 
 header {
@@ -28,8 +41,30 @@ header {
   margin: 10px;
 }
 
+h3 {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+
 .linea {
-  /*background-color: aquamarine;*/
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.linea label {
+  display: none;
+}
+
+.linea input,
+.linea select {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* .linea {
+  /*background-color: aquamarine;
   display: inline-flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -37,14 +72,13 @@ header {
   flex:auto;
   align-content: center;
   width: 100%;
-}
+} */
 
 .isotipo,
 .centered-title {
   margin: 0; /* Remove any default margins */
   color: #7d7d7d;
   font-size: 70px;
-
 }
 
 footer {
@@ -56,4 +90,56 @@ footer {
 .icono-footer {
   width: 30px;
   height: 30px;
+}
+
+/*320, 480, 768, y 1024*/
+@media screen and (max-width: 320px) {
+  .linea label {
+    display: none;
+  }
+
+  .linea {
+    /*background-color: aquamarine;*/
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: auto;
+    align-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px){
+  .linea label {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .linea input, select{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex: auto;
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-content: center;
+    
+
+    /* .linea {
+  /*background-color: aquamarine;
+  display: inline-flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  flex:auto;
+  align-content: center;
+  width: 100%;
+} */
+
+  }
 }
