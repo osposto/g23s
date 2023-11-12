@@ -1,6 +1,6 @@
 @font-face {
-   src: url(fuentes_html/Barlow/Barlow-Medium.ttf) format("ttf");
-   font-family: "Barlow-Medium";
+  src: url(fuentes_html/Barlow/Barlow-Medium.ttf) format("ttf");
+  font-family: "Barlow-Medium";
 }
 
 *,
@@ -14,7 +14,7 @@
 main {
   margin: 1rem auto;
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
   /* text-align: center;*/
 }
 
@@ -27,9 +27,9 @@ input,
 select {
   /*display: flex;*/
   border-radius: 5px;
-  background-color: rgb(231, 248, 197);
-  margin: 10px;
-  padding: 0.2rem;
+  /*background-color: rgb(231, 248, 197);*/
+  margin: 1px;
+  padding: 0rem;
   font-family: "Barlow-Medium", sans-serif;
   font-size: 1rem;
   text-align: left;
@@ -93,6 +93,7 @@ footer {
 }
 
 /*320, 480, 768, y 1024*/
+
 @media screen and (max-width: 320px) {
   .linea label {
     display: none;
@@ -110,36 +111,36 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px){
+@media screen and ((min-width: 321px) and (max-width: 480px)) {
   .linea label {
     display: flex;
-    flex-direction: row;
+    /*flex-basis: 1.2rem;*/
+  }
+
+  .linea {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    flex: auto;
+    flex-basis: 9rem;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .linea input, select{
+@media screen and ((min-width: 481px) and (max-width: 760px)) {
+  .linea label {
+    display: flex;
+    flex-basis: 9rem;
+  }
+
+  .linea {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
     flex: auto;
-    flex-basis: 1rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-    align-content: center;
+    flex-basis: 0rem;
     
-
-    /* .linea {
-  /*background-color: aquamarine;
-  display: inline-flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content: center;
-  flex:auto;
-  align-content: center;
-  width: 100%;
-} */
-
   }
 }
