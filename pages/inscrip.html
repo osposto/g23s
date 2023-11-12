@@ -29,7 +29,7 @@
 
     <main>
       <h3>Formulario de Registro</h3>
-      <form method="post" action="procesar.php">
+      <form id="registro" method="post" action="procesar.php">
         <div class="linea">
           <label for="nombre">Nombre:</label>
           <input
@@ -191,15 +191,13 @@
             </option>
           </select>
         </div>
-        <div class="linea">
-          <div>
-            <button id="send">Enviar</button>
-          </div>
-          <div>
-            <button id="cancel">Cancelar</button>
-          </div>
+        <div class="botones-container">
+          <button form="registro">Enviar</button>
         </div>
-      </form>
+      </form> 
+
+      
+
     </main>
 
     <footer>
@@ -213,7 +211,7 @@
         />
       </div>
       <p>G_23</p>
-      <!-- <p>&#169 Copyright 2023 Todos los derechos reservados</p>-->
+      <p>&#169 Copyright 2023 Todos los derechos reservados</p>
       <img
         class="icono-footer"
         src="../assets/icons/social_facebook_fb_35.png"

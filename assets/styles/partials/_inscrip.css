@@ -1,5 +1,5 @@
 @font-face {
-  src: url(fuentes_html/Barlow/Barlow-Medium.ttf) format("ttf");
+  src: url(/assets/fonts/Barlow-Medium.ttf) format("woff");
   font-family: "Barlow-Medium";
 }
 
@@ -20,25 +20,31 @@ main {
 
 .isotipo {
   /*background-color: aquamarine;*/
-  height: 5vw;
+  height: 5rem;
 }
 
 input,
 select {
-  /*display: flex;*/
   border-radius: 5px;
-  /*background-color: rgb(231, 248, 197);*/
   margin: 1px;
   padding: 0rem;
   font-family: "Barlow-Medium", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
 }
 
+button{
+  border-radius: 5px;
+  margin: 4px;
+  padding: 0rem;
+  font-family: "Barlow-Medium", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
 header {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 0.1rem;
 }
 
 h3 {
@@ -63,27 +69,23 @@ h3 {
   flex-shrink: 1;
 }
 
-/* .linea {
-  /*background-color: aquamarine;
-  display: inline-flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content: center;
-  flex:auto;
-  align-content: center;
-  width: 100%;
-} */
+.botones-container{
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+ }
+
 
 .isotipo,
 .centered-title {
-  margin: 0; /* Remove any default margins */
+  margin: 0; 
   color: #7d7d7d;
   font-size: 70px;
 }
 
 footer {
   background-color: #ffb797;
-  font-family: Barlow-BlackItalic;
+  /*font-family: Barlow-BlackItalic;*/
   text-align: center;
 }
 
@@ -100,7 +102,6 @@ footer {
   }
 
   .linea {
-    /*background-color: aquamarine;*/
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,6 +127,12 @@ footer {
     flex-basis: 9rem;
     width: 100%;
   }
+
+  .botones-container{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 @media screen and ((min-width: 481px) and (max-width: 760px)) {
@@ -143,4 +150,39 @@ footer {
     flex-basis: 0rem;
     
   }
+
+  .botones-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: auto;
+    flex-basis: 15rem;
+   }
+}
+
+  @media screen and ((min-width: 761px)) {
+    .linea label {
+      display: flex;
+      flex-basis: 9rem;
+    }
+  
+    .linea {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /*justify-content: center;*/
+      flex: auto;
+      flex-basis: 0rem;
+      
+    }
+
+    .botones-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      flex: auto;
+      flex-basis: 15rem;
+     }
 }
