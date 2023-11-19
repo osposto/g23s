@@ -6,7 +6,7 @@ async function sendMessage() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer tu_clave_de_api',  // Reemplaza con tu clave de API
+            'Authorization': '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',  // Reemplaza con tu clave de API
         },
         body: JSON.stringify({
             'messages': [
