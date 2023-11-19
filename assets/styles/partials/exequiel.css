@@ -54,20 +54,19 @@ h3 {
 .desc-container {
   display: block;
   position:static;
-  margin: 0% 25%;
-  width: 50%;
+  margin: 0vw 25vw;
+  width: 50vw;
   text-align:center;
-  border:1px #8b0000 solid; 
+  /*border:1px #8b0000 solid; */
   
 }
 
 .lista {
   display: block;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4vw;
+  padding-right: 0%;
   width: 50%;
   margin-left:25%;
-  margin-right:25%;
   border:1px #8b0000 solid;
   text-align: left;
   /*padding: 1% 2%;*/
