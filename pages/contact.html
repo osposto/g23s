@@ -13,100 +13,132 @@
       crossorigin="anonymous"
     />
   </head>
-  
+
   <body>
     <header class="head-menu">
       <div class="encabezado logo-nav">
-        <img src="../assets/images/logo_header-1.png" style="float: left;" alt="Shibumi" height="100" width="300">
-          <div class="txt-nav">
-              <p class="logo"></p>
-  
-              <nav class="menu" align="center">
-                  <ul>
-                      <li><a href="../index.html">Home</a></li>
-                      <li><a href="../pages/about.html">Nosotros</a></li>
-                      <li><a href="../pages/contact.html">Contacto</a></li>
-                      <li><a href="../pages/inscrip.html">Registrese</a></li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
-  </header>
-  <section>
-  </section>
-  <div class="container">
-    <div class="row">
-      <div class="col-9"></div>
- 
-    <form class="row g-3 needs-validation" name="contact" netlify>
-      <div class="col-md-4">
-        <label for="name" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="name" name required>
-      
-      </div>
-      <div class="col-md-4">
-        <label for="apellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="apellido" name required
+        <img
+          src="../assets/images/logo_header-1.png"
+          style="float: left"
+          alt="Shibumi"
+          height="100"
+          width="300"
         />
+        <div class="txt-nav">
+          <p class="logo"></p>
 
-      </div>
-      <p></p>
-      <div class="col-md-4">
-        <label for="validationCustomUserName" class="form-label">Email</label>
-        <div class="input-group has-validation">
-     
-          <input type="email" class="form-control" id="validationCustomUserName"
-            aria-describedby="inputGroupPrepend"
-            required>
-       
+          <nav class="menu" align="center">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/about.html">Nosotros</a></li>
+              <li><a href="../pages/contact.html">Contacto</a></li>
+              <li><a href="../pages/inscrip.html">Registrese</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-9"></div>
 
-      <div class="mb-3">
-        <label for="mensaje-01" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje-01" rows="3"></textarea>
-      </div>
+          <form class="row g-3 needs-validation" name="contact" netlify>
+            <div class="col-md-4">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name required />
+            </div>
+            <div class="col-md-4">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apellido"
+                name
+                required
+              />
+            </div>
+            <p></p>
+            <div class="col-md-4">
+              <label for="validationCustomUserName" class="form-label"
+                >Email</label
+              >
+              <div class="input-group has-validation">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationCustomUserName"
+                  aria-describedby="inputGroupPrepend"
+                  required
+                />
+              </div>
+            </div>
 
-      <div class="col-12">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="invalidCheck"
-            required
-          />
-          <label class="form-check-label" for="invalidCheck">
-            Estoy de acuerdo con los téminos y condiciones.
-          </label>
-          <div class="invalid-feedback">You must agree before submitting.</div>
+            <div class="mb-3">
+              <label for="mensaje-01" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje-01"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Estoy de acuerdo con los téminos y condiciones.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button form="contact" class="btn btn-primary" type="submit">
+                Enviar formulario
+              </button>
+            </div>
+          </form>
+
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+          ></script>
         </div>
       </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Enviar formulario</button>
-      </div>
-    </form>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    </div>
-  </div>
-</section>
+    </section>
 
     <footer>
       <div class="img_footer">
-        <img src="../assets/images/logo_header-1.png" style="align-content: center;" alt="Logo Estudio Aclif" height="33" width="120">
+        <img
+          src="../assets/images/logo_header-1.png"
+          style="align-content: center"
+          alt="Logo Estudio Aclif"
+          height="33"
+          width="120"
+        />
       </div>
-      <p>G_23 </p>
-    <p>&#169 Copyright 2023 Todos los derechos reservados</p>
-    <img class="icono-footer" src="../assets/icons/social_facebook_fb_35.png"">
-    <img class="icono-footer" src="../assets/icons/social_instagram_3.png" >
-    <img class="icono-footer" src="../assets/icons/social_Pinterest_8 (1).png" >
-    <img class="icono-footer" src="../assets/icons/sociallinkedin_member_70.png" >
-
+      <p>G_23</p>
+      <p>&#169; Copyright 2023 Todos los derechos reservados</p>
+      <img class="icono-footer"
+      src="../assets/icons/social_facebook_fb_35.png"">
+      <img class="icono-footer" src="../assets/icons/social_instagram_3.png" />
+      <img
+        class="icono-footer"
+        src="../assets/icons/social_Pinterest_8 (1).png"
+      />
+      <img
+        class="icono-footer"
+        src="../assets/icons/sociallinkedin_member_70.png"
+      />
     </footer>
   </body>
 </html>
